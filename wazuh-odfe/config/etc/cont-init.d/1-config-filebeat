@@ -10,15 +10,15 @@ fi
 
 # Configure filebeat.yml security settings
 
-if [ "$ELASTIC_USERNAME" != "" ]; then
-  >&2 echo "Configuring username."
-  sed -i "s|#username:.*|username: '$ELASTIC_USERNAME'|g" /etc/filebeat/filebeat.yml
-fi
+#if [ "$ELASTIC_USERNAME" != "" ]; then
+#  >&2 echo "Configuring username."
+#  sed -i "s|#username:.*|username: '$ELASTIC_USERNAME'|g" /etc/filebeat/filebeat.yml
+#fi
 
-if [ "$ELASTIC_PASSWORD" != "" ]; then
-  >&2 echo "Configuring password."
-  sed -i "s|#password:.*|password: '$ELASTIC_PASSWORD'|g" /etc/filebeat/filebeat.yml
-fi
+#if [ "$ELASTIC_PASSWORD" != "" ]; then
+#  >&2 echo "Configuring password."
+#  sed -i "s|#password:.*|password: '$ELASTIC_PASSWORD'|g" /etc/filebeat/filebeat.yml
+#fi
 
 if [ "$FILEBEAT_SSL_VERIFICATION_MODE" != "" ]; then
   >&2 echo "Configuring SSL verification mode."
