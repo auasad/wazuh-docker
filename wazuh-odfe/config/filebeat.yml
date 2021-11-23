@@ -14,8 +14,8 @@ setup.template.overwrite: true
 setup.ilm.enabled: false
 output.elasticsearch:
   hosts: ['https://elasticsearch:9200']
-  #username:
-  #password:
+  #username: auasad     
+  #password: asdf12@#
   #ssl.verification_mode:
   #ssl.certificate_authorities:
   #ssl.certificate:
