@@ -1,4 +1,4 @@
-
+# Author : Asad Ullah
 # Wazuh - Filebeat configuration file
 filebeat.modules:
   - module: wazuh
@@ -14,8 +14,8 @@ setup.template.overwrite: true
 setup.ilm.enabled: false
 output.elasticsearch:
   hosts: ['https://elasticsearch:9200']
-  #username: auasad     
-  #password: asdf12@#
+  #username:    
+  #password:
   #ssl.verification_mode:
   #ssl.certificate_authorities:
   #ssl.certificate:
